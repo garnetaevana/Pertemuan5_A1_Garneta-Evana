@@ -1,0 +1,12 @@
+n = int(input("Masukkan jumlah data: "))
+
+data = []
+total = 0
+
+for i in range(0, n):
+    nilai = int(input(f"Masukkan data ke-%d: " % (i+1)))
+    data.append(nilai)
+    total += data[i]
+    rata2 = total / n
+
+print(f"Rata-rata dari {n} data adalah = %0.2f" % rata2)
